@@ -1,4 +1,5 @@
 ﻿<?php
+require_once('auth.php');
 require_once('simple_html_dom.php'); //здесь подключаю библиотеку simplhtmldom
 $html = file_get_html('http://www.yandex.ru/'); // парсим главную яндекса
 $text=$html->find('.b-news__tabs,.b-news__news'); //при помощи метода find отбираем текст и данных классов
